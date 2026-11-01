@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      MOD_FOLDER: "ChatRealms"
+      ZIP_NAME: "ChatRealms"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: echo "version=$(python3 -c "import json;print(json.load(open('mod.json',encoding='utf-8-sig'))['version'])")" >> "$GITHUB_OUTPUT"
+      - name: Build zip
+        run: |
+          mkdir -p "dist/$MOD_FOLDER"
+          rsync -a --exclude ".git" --exclude ".github" --exclude "dist" ./ "dist/$MOD_FOLDER/"
+          cd dist && zip -qr "$ZIP_NAME.zip" "$MOD_FOLDER"
+      - name: Publish release
+        run: |
+          TAG="v${{ steps.v.outputs.version }}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "dist/$ZIP_NAME.zip" --clobber
+          else
+            gh release create "$TAG" "dist/$ZIP_NAME.zip" --title "$TAG" --notes "Download $ZIP_NAME.zip and extract it into your WorldBox Mods folder. / Baixe o $ZIP_NAME.zip e extraia na pasta Mods do WorldBox." --latest
+          fi

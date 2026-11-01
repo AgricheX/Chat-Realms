@@ -1,0 +1,35 @@
+{
+  "name": "ChatRealms",
+  "GUID": "AGRICHE_CHATREALMS",
+  "author": "Agriche",
+  "version": "0.1.0",
+  "description": "Twitch chat votes on world events and Discord players act as kingdoms and units through a relay bot.",
+  "RepoUrl": null,
+  "Dependencies": [],
+  "OptionalDependencies": [],
+  "IncompatibleWith": [],
+  "FolderPath": "D:\\SteamLibrary\\steamapps\\common\\worldbox\\Mods\\ChatRealms",
+  "targetGameBuild": 558,
+  "iconPath": "icon.png",
+  "ModType": 0,
+  "UsePublicizedAssembly": true,
+  "IsNCMSMod": false,
+  "FailReason": {
+    "m_MaxCapacity": 2147483647,
+    "Capacity": 16,
+    "m_StringValue": "",
+    "m_currentThread": 0
+  },
+  "IsWorkshopLoaded": false,
+  "ai_attribution": "ai_assisted",
+  "ai_badge_corner": "bottom_right",
+  "ai_badge_style": "standard",
+  "ai_check_code": true,
+  "ai_check_art": false,
+  "ai_check_translation": false,
+  "ai_check_audio": false,
+  "steam_id": 3823172835,
+  "tags": [
+    "Gameplay"
+  ]
+}

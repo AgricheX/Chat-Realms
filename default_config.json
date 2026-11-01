@@ -1,0 +1,31 @@
+{
+  "ChatRealms": [
+    { "Id": "Twitch Enabled", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": false },
+    { "Id": "Twitch Channel", "Type": "TEXT", "IconPath": "ui/icons/iconCityZones", "TextVal": "" },
+    { "Id": "Roleplay Mode", "Type": "SWITCH", "IconPath": "ui/icons/iconKingdomZones", "BoolVal": false },
+    { "Id": "Roleplay Target", "Type": "TEXT", "IconPath": "ui/icons/iconCityZones", "TextVal": "" },
+    { "Id": "Poll Duration", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 30, "MinIntVal": 10, "MaxIntVal": 300 },
+    { "Id": "Poll Interval", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 60, "MinIntVal": 10, "MaxIntVal": 900 },
+    { "Id": "Poll Options", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 4, "MinIntVal": 2, "MaxIntVal": 6 },
+    { "Id": "Allow Destructive Events", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Show Overlay", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Use Portuguese", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true }
+  ],
+  "Discord": [
+    { "Id": "Relay Enabled", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": false },
+    { "Id": "Relay URL", "Type": "TEXT", "IconPath": "ui/icons/iconCityZones", "TextVal": "wss://relay.example.com/relay" },
+    { "Id": "Pairing Code", "Type": "TEXT", "IconPath": "ui/icons/iconCityZones", "TextVal": "" },
+    { "Id": "Unit Mode", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Allow Discord Wars", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Allow Discord Destructive", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": false },
+    { "Id": "User Cooldown", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 10, "MinIntVal": 1, "MaxIntVal": 300 },
+    { "Id": "Actions Per Minute", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 20, "MinIntVal": 1, "MaxIntVal": 120 },
+    { "Id": "Blocked Words", "Type": "TEXT", "IconPath": "ui/icons/iconCityZones", "TextVal": "" },
+    { "Id": "Allow Screenshots", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Hide UI In Screenshots", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "War Rumor Years", "Type": "INT_SLIDER", "IconPath": "ui/icons/iconKingdomZones", "IntVal": 2, "MinIntVal": 0, "MaxIntVal": 20 },
+    { "Id": "Apply RP Rules", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Cohesion Consequences", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": true },
+    { "Id": "Allow Insecure TLS", "Type": "SWITCH", "IconPath": "ui/icons/iconHideUI", "BoolVal": false }
+  ]
+}
