@@ -15,7 +15,7 @@ English first, português do Brasil logo abaixo.
 - WorldBox with the **NML (Neo Mod Loader)** installed
 - The ChatRealms mod, installed like any other NML mod
 - A Discord server where you have the **Manage Server** permission
-- The ChatRealms bot added to that server: **[BOT INVITE LINK]**
+- The ChatRealms bot added to that server: **https://discord.com/oauth2/authorize?client_id=1561216083728277524**
 
 Twitch is optional.
 
@@ -27,7 +27,7 @@ You only do this once per world.
 2. In any channel of your server, type `/pair generate`. The bot answers only to you and shows two things: the **Relay URL** and the **pairing code**. Keep this message private.
 3. **Open WorldBox** and load your world. Open the mod settings and find the group **ChatRealms - Discord**.
 4. Turn on **Discord relay enabled**.
-5. Paste the address into **Relay URL (wss://...)**, and the code into **Pairing code**.
+5. Paste the address into **Relay URL (wss://...)**, and the code into **Pairing code**. Relay URL: `wss://emily-bot.duckdns.org/relay`
 6. Back on Discord, type `/pair status`. It should say your server is paired. The mod status also changes to paired.
 
 Your server is now connected to that world. A server is linked to one world at a time. To switch worlds or cut the connection, use `/pair revoke` and pair again.
@@ -96,7 +96,7 @@ Never post your pairing code in public channels. If it leaks, run `/pair revoke`
 - WorldBox com o **NML (Neo Mod Loader)** instalado
 - O mod ChatRealms, instalado como qualquer outro mod do NML
 - Um servidor do Discord onde você tenha a permissão **Gerenciar Servidor**
-- O bot do ChatRealms adicionado ao servidor: **[LINK DE CONVITE DO BOT]**
+- O bot do ChatRealms adicionado ao servidor: **https://discord.com/oauth2/authorize?client_id=1561216083728277524**
 
 A Twitch é opcional.
 
@@ -108,7 +108,7 @@ Você faz isso uma vez por mundo.
 2. Em qualquer canal, digite `/parear gerar`. O bot responde só para você e mostra duas coisas: a **URL do relé** e o **código de pareamento**. Mantenha essa mensagem em segredo.
 3. **Abra o WorldBox** e carregue o seu mundo. Abra as configurações do mod e procure o grupo **ChatRealms - Discord**.
 4. Ligue **Discord relay enabled**.
-5. Cole o endereço em **Relay URL (wss://...)** e o código em **Pairing code**.
+5. Cole o endereço em **Relay URL (wss://...)** e o código em **Pairing code**. Relay URL: `wss://emily-bot.duckdns.org/relay`
 6. De volta ao Discord, digite `/parear status`. Ele deve dizer que o servidor está pareado. O status no mod também muda para pareado.
 
 Pronto, o seu servidor está ligado àquele mundo. Um servidor fica ligado a um mundo por vez. Para trocar de mundo ou cortar a ligação, use `/parear revogar` e pareie de novo.
